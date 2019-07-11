@@ -1,0 +1,23 @@
+version: '3'
+services:
+    server:
+        build:
+            context: ./
+            dockerfile: ./server/Dockerfile
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - ./server:/server
+        ports:
+            - 8000:8000
+        depends_on:
+            - db
+        environment:
+            DEBUG: 'True'
+            DATABASE_URL: 'postgres://postgres:@db:5432/postgres'
+            BROKER_URL: 'amqp://user:password@rabbitmq:5672/my_vhost'
+
+    db:
+        image: postgres:11.2
+        environment:
+            POSTGRES_DB: postgres
+            POSTGRES_USER: postgres

@@ -1,0 +1,12 @@
+/client/build
+/server/staticfiles
+/server/media
+.DS_Store
+.idea
+.vscode
+*.log
+*.pyc
+**/__pycache__/
+*.sql
+*.7z
+/pg_data
