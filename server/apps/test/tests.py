@@ -20,6 +20,7 @@ class TestSignalTests(TestCase):
 
         self.assertEqual(test_instance.name, name)
         self.assertEqual(type(test_instance.random_string), str)
+        self.assertEqual(len(test_instance.random_string), 32)
 
 
 class NumPairAPITests(APITestCase):
