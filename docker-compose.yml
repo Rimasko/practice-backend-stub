@@ -11,6 +11,7 @@ services:
             - 8000:8000
         depends_on:
             - db
+            - redis
         environment:
             DEBUG: 'True'
             DATABASE_URL: 'postgres://postgres:@db:5432/postgres'
@@ -21,3 +22,7 @@ services:
         environment:
             POSTGRES_DB: postgres
             POSTGRES_USER: postgres
+    redis:
+        image: redis:latest
+        expose:
+            - "6379"

@@ -19,3 +19,4 @@ COPY ./nginx/nginx.conf /etc/nginx/
 
 RUN mkdir /nginx
 COPY --from=server /server/staticfiles /nginx/static
+COPY --from=server /server/media /nginx/media

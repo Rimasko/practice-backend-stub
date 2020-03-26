@@ -9,6 +9,7 @@ from apps.api.routers import router
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('doc', include('apps.main.urls'))
 ]
 
 if settings.DEBUG:

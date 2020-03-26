@@ -1,6 +1,6 @@
 Django==2.2.1
 psycopg2-binary==2.8.2 # работа с базой данных postgres
-
+yandex-geocoder==2.0.0
 dj-database-url==0.5.0 # передача настроек БД из env окружения
 gunicorn==19.9.0 # http сервер, который свзявает nginx с django приложением
 
@@ -11,3 +11,6 @@ django-debug-toolbar==1.11 # панель для отладки запросов
 Pillow==6.0.0 # для работы с изображениями
 djangorestframework==3.9.1 # API
 django-url-filter==0.3.12 # улучшенные фильтры для DRF
+django-rest-swagger==2.2.0 # Swager для документации
+django-redis==4.11.0 # для работы с redis
+redis==2.10.3
