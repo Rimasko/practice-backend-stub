@@ -8,7 +8,7 @@ ipdb==0.11 # отладка программ
 ipython==7.5.0 # приятная работа в shell
 django-debug-toolbar==1.11 # панель для отладки запросов в бд
 
-Pillow==6.0.0 # для работы с изображениями
+Pillow==8.2.0 # для работы с изображениями
 djangorestframework==3.9.1 # API
 django-url-filter==0.3.12 # улучшенные фильтры для DRF
 django-rest-swagger==2.2.0 # Swager для документации
